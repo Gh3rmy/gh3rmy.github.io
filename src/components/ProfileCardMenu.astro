@@ -8,26 +8,26 @@ import { Icon } from "astro-icon/components";
 >
   {
     menuItems.map((item) => (
-      <li class="w-full relative">
+      <li class="w-full relative group">
         {item.subItems ? (
           <details class="menu-item">
-            <summary class="justify-center lg:justify-start items-center text-center text-xl md:text-3xl lg:text-xl font-bold p-4">
-              <Icon name={item.svg} />
-              <span class="hidden lg:inline ml-2">{item.text}</span>
+            <summary class="items-center flex font-bold p-4 text-center text-xl hover:bg-base-200 justify-center lg:justify-start lg:text-xl md:text-3xl rounded-lg transition-color transition-scale">
+              <Icon name={item.svg} class="transition-transform duration-200 group-hover:scale-110"/>
+              <span class="transition-transform duration-200 group-hover:translate-x-1 hidden lg:inline ml-2">{item.text}</span>
             </summary>
             <ul>
               {item.subItems.map((subItem) => (
                 <li>
                   <a
                     tabindex="0"
-                    class="menu-item text-xl font-bold p-4"
+                    class="menu-item font-bold text-base hover:bg-base-200 lg:text-base md:text-2xl p-2 rounded-lg transition-color transition-scale"
                     id={`header-${subItem.id}`}
                     href={subItem.href}
                     target={subItem.target || "_self"}
                     aria-label={subItem.text}
                   >
-                    <Icon name={subItem.svg} />
-                    <span class="hidden lg:inline ml-2">{subItem.text}</span>
+                    <Icon name={subItem.svg} class="transition-transform duration-200 group-hover:scale-110" />
+                    <span class="transition-transform duration-200 group-hover:translate-x-1 hidden lg:inline ml-2">{subItem.text}</span>
                   </a>
                 </li>
               ))}
@@ -36,15 +36,15 @@ import { Icon } from "astro-icon/components";
         ) : (
           <a
             tabindex="0"
-            class="flex justify-center lg:justify-start items-center text-center text-xl md:text-3xl lg:text-xl font-bold p-4"
+            class="items-center flex font-bold p-4 text-center text-xl hover:bg-base-200 justify-center lg:justify-start lg:text-xl md:text-3xl rounded-lg transition-color transition-scale"
             id={item.id}
             title={item.id}
             href={item.href}
             target={item.target || "_self"}
             aria-label={item.text}
           >
-            <Icon name={item.svg} />
-            <span class="hidden lg:inline ml-2">{item.text}</span>
+            <Icon name={item.svg} class="transition-transform duration-200 group-hover:scale-110"/>
+            <span class="transition-transform duration-200 group-hover:translate-x-1 hidden lg:inline ml-2">{item.text}</span>
           </a>
         )}
       </li>
