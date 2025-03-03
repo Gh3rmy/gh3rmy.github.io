@@ -3,18 +3,18 @@
 
 // Site title and description
 export const SITE_LANG = "es";
-export const SITE_TAB = "YatoDev";
-export const SITE_TITLE = "YatoDev - Blog";
-export const SITE_DESCRIPTION = "A tech blog by YatoDev";
+export const SITE_TAB = "Gh3rmy";
+export const SITE_TITLE = "Gh3rmy - Blog";
+export const SITE_DESCRIPTION = "Tech Blog Gh3rmy";
 export const DATE_FORMAT = "ddd DD MMM YYYY";
 
 // User profile information
-export const USER_NAME = "YatoDev";
-export const USER_SITE = "https://yato03.github.io";
-export const USER_AVATAR = "/profile-pic.png";
+export const USER_NAME = "Gh3rmy";
+export const USER_SITE = "https://gh3rmy.github.io/";
+export const USER_AVATAR = "/profile.webp";
 
 // Server and transition settings
-export const SERVER_URL = "https://yato03.github.io";
+export const SERVER_URL = "https://gh3rmy.github.io/";
 
 // Theme settings
 export const DAISYUI_THEME = {
