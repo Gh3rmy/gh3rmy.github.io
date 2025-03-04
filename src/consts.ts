@@ -82,7 +82,7 @@ export const menuItems = [
   {
     id: "contact",
     text: "Contacto",
-    href: "mailto:miguelhs3523@gmail.com", // Contact email
+    href: "mailto:germanigrojas@gmail.com", // Contact email
     target: "_blank", // Open in a new tab
     svg: "material-symbols:attach-email-outline-rounded",
   },
@@ -91,19 +91,19 @@ export const menuItems = [
 // Social media and contact icons
 export const socialIcons = [
   {
-    href: "https://github.com/Yato03",
+    href: "https://github.com/Gh3rmy",
     ariaLabel: "Github",
     title: "Github",
     svg: "ri:github-line",
   },
   {
-    href: "https://www.linkedin.com/in/miguel-hern%C3%A1ndez-677a7020b/",
+    href: "#",
     ariaLabel: "LinkedIn",
     title: "LinkedIn",
     svg: "ri:linkedin-line",
   },
   {
-    href: "https://x.com/YatoDev03",
+    href: "https://x.com/germanig11",
     ariaLabel: "X",
     title: "X",
     svg: "ri:twitter-x-line"
