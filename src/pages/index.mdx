@@ -1,3 +1,5 @@
+import bannerImage from "../banner.jpeg";
+
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BaseCard from "../components/BaseCard.astro";
 import Collapse from "../components/blog/collapse.astro";
@@ -9,11 +11,10 @@ import Success from "../components/blog/success.astro";
 import Warning from "../components/blog/warning.astro";
 import TimeLine from "../components/page/TimeLine.astro";
 import LinkCard from "../components/page/LinkCard.astro";
-
-
+---
 
 <BaseLayout title="Home">
-  <BaseCard title="Home" image="../banner.jpeg">
+  <BaseCard title="Home" image={bannerImage}>
 # Introducción
 
 ---
@@ -46,9 +47,9 @@ Para cumplir mi misión de ayudar a la comunidad, creo proyectos para facilitar 
 
 ## 📚 **Certificaciones**
 
-En cuanto a mis certificaciones, Cuento con distintas certificaciones brindadas por distintas Fuerzas del Orden de Argentina 🇦🇷**. 
+En cuanto a mis certificaciones, Cuento con distintas certificaciones brindadas por distintas Fuerzas del Orden de Argentina 🇦🇷**. 
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7237534628952109056" height="772" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
 
-  </BaseCard>
+  </BaseCard>
 </BaseLayout>
